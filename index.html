@@ -98,7 +98,7 @@
   .edu-school{ font-weight:600; color:var(--ink); min-width:200px; }
   .edu-meta{ color:var(--ink-dim); font-size:13px; }
 
-  .projects-list{ display:grid; grid-template-columns:repeat(auto-fill, minmax(280px,1fr)); gap:22px; }
+  .projects-list{ display:grid; grid-template-columns:repeat(3, 1fr); gap:22px; }
 
   .proj{
     background:var(--bg-raised);
@@ -168,6 +168,7 @@
     :root{ --gutter-w: 26px; }
     .gutter{ font-size:10px; padding-top:26px; }
     .content{ padding:26px 16px 60px; }
+    .projects-list{ grid-template-columns:1fr; }
     .proj-head{ flex-direction:column; align-items:flex-start; }
     .edu-row{ flex-direction:column; gap:4px; }
     .edu-school{ min-width:0; }
@@ -230,38 +231,6 @@
       <div class="projects-list">
 
         <div class="proj">
-          <a href="https://bodyai-frontend.vercel.app/" target="_blank" rel="noopener">
-            <img class="proj-shot" src="https://image.thum.io/get/width/900/crop/600/https://bodyai-frontend.vercel.app/" alt="body.ai homepage screenshot">
-          </a>
-          <div class="proj-body">
-            <div class="proj-head">
-              <div class="proj-name">body.ai<span class="ext"></span></div>
-              <div class="proj-links"><a href="https://bodyai-frontend.vercel.app/" target="_blank" rel="noopener">visit →</a></div>
-            </div>
-            <p class="proj-desc">
-              Physique analysis using AI. You upload a photo of your physique along with your metrics and a vision LLM estimates body composition, logging every result to your history. Mobile and web clients.
-            </p>
-            <div class="proj-meta"><span>Express</span><span>MongoDB</span><span>OpenRouter</span><span>Next.js</span><span>Expo</span></div>
-          </div>
-        </div>
-
-        <div class="proj">
-          <a href="https://www.shaheenwear.store/" target="_blank" rel="noopener">
-            <img class="proj-shot" src="https://image.thum.io/get/width/900/crop/600/https://www.shaheenwear.store/" alt="shaheenstore homepage screenshot">
-          </a>
-          <div class="proj-body">
-            <div class="proj-head">
-              <div class="proj-name">shaheenstore<span class="ext"></span></div>
-              <div class="proj-links"><a href="https://www.shaheenwear.store/" target="_blank" rel="noopener">visit →</a></div>
-            </div>
-            <p class="proj-desc">
-              Full e-commerce storefront for a store called Shaheen Wear. Features include sections for men/women/kids collections, cart, Stripe checkout, and an admin dashboard with analytics.
-            </p>
-            <div class="proj-meta"><span>Next.js</span><span>Express</span><span>MongoDB</span><span>Stripe</span><span>Clerk</span></div>
-          </div>
-        </div>
-
-        <div class="proj">
           <a href="https://webko-client.vercel.app/" target="_blank" rel="noopener">
             <img class="proj-shot" src="https://image.thum.io/get/width/900/crop/600/https://webko-client.vercel.app/" alt="webko homepage screenshot">
           </a>
@@ -290,6 +259,38 @@
               Internal dashboard for a windows &amp; uPVC company with features like quotation calculator and generator, customer/job cards, payments, and a Word/Excel/PDF document converter.
             </p>
             <div class="proj-meta"><span>Next.js</span><span>Express</span><span>MongoDB</span><span>tldraw</span><span>exceljs</span></div>
+          </div>
+        </div>
+
+        <div class="proj">
+          <a href="https://bodyai-frontend.vercel.app/" target="_blank" rel="noopener">
+            <img class="proj-shot" src="https://image.thum.io/get/width/900/crop/600/https://bodyai-frontend.vercel.app/" alt="body.ai homepage screenshot">
+          </a>
+          <div class="proj-body">
+            <div class="proj-head">
+              <div class="proj-name">body.ai<span class="ext"></span></div>
+              <div class="proj-links"><a href="https://bodyai-frontend.vercel.app/" target="_blank" rel="noopener">visit →</a></div>
+            </div>
+            <p class="proj-desc">
+              Physique analysis using AI. You upload a photo of your physique along with your metrics and a vision LLM estimates body composition, logging every result to your history. Mobile and web clients.
+            </p>
+            <div class="proj-meta"><span>Express</span><span>MongoDB</span><span>OpenRouter</span><span>Next.js</span><span>Expo</span></div>
+          </div>
+        </div>
+
+        <div class="proj">
+          <a href="https://www.shaheenwear.store/" target="_blank" rel="noopener">
+            <img class="proj-shot" src="https://image.thum.io/get/width/900/crop/600/https://www.shaheenwear.store/" alt="shaheenstore homepage screenshot">
+          </a>
+          <div class="proj-body">
+            <div class="proj-head">
+              <div class="proj-name">shaheenstore<span class="ext"></span></div>
+              <div class="proj-links"><a href="https://www.shaheenwear.store/" target="_blank" rel="noopener">visit →</a></div>
+            </div>
+            <p class="proj-desc">
+              Full e-commerce storefront for a store called Shaheen Wear. Features include sections for men/women/kids collections, cart, Stripe checkout, and an admin dashboard with analytics.
+            </p>
+            <div class="proj-meta"><span>Next.js</span><span>Express</span><span>MongoDB</span><span>Stripe</span><span>Clerk</span></div>
           </div>
         </div>
 
